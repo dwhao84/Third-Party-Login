@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D33F2D282DAAB7B300817D99 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D33F2D272DAAB7B300817D99 /* GoogleSignIn */; };
+		D33F2D2A2DAAB7B300817D99 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D33F2D292DAAB7B300817D99 /* GoogleSignInSwift */; };
 		D37C32622DA98147005AADC6 /* FacebookAEM in Frameworks */ = {isa = PBXBuildFile; productRef = D37C32612DA98147005AADC6 /* FacebookAEM */; };
 		D37C32642DA98147005AADC6 /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = D37C32632DA98147005AADC6 /* FacebookBasics */; };
 		D37C32662DA98147005AADC6 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = D37C32652DA98147005AADC6 /* FacebookCore */; };
@@ -72,8 +74,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D33F2D282DAAB7B300817D99 /* GoogleSignIn in Frameworks */,
 				D37C326A2DA98147005AADC6 /* FacebookLogin in Frameworks */,
 				D37C32622DA98147005AADC6 /* FacebookAEM in Frameworks */,
+				D33F2D2A2DAAB7B300817D99 /* GoogleSignInSwift in Frameworks */,
 				D37C32662DA98147005AADC6 /* FacebookCore in Frameworks */,
 				D37C32642DA98147005AADC6 /* FacebookBasics in Frameworks */,
 			);
@@ -140,6 +144,8 @@
 				D37C32632DA98147005AADC6 /* FacebookBasics */,
 				D37C32652DA98147005AADC6 /* FacebookCore */,
 				D37C32692DA98147005AADC6 /* FacebookLogin */,
+				D33F2D272DAAB7B300817D99 /* GoogleSignIn */,
+				D33F2D292DAAB7B300817D99 /* GoogleSignInSwift */,
 			);
 			productName = "Third-Party-Login";
 			productReference = D31055512DA97A9800B766BB /* Third-Party-Login.app */;
@@ -225,6 +231,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				D37C32602DA98147005AADC6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				D33F2D262DAAB7B300817D99 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D31055522DA97A9800B766BB /* Products */;
@@ -305,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Third-Party-Login/Third-Party-Login.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5862HZ6X6T;
@@ -334,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Third-Party-Login/Third-Party-Login.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5862HZ6X6T;
@@ -591,6 +600,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D33F2D262DAAB7B300817D99 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 		D37C32602DA98147005AADC6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
@@ -602,6 +619,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D33F2D272DAAB7B300817D99 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D33F2D262DAAB7B300817D99 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		D33F2D292DAAB7B300817D99 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D33F2D262DAAB7B300817D99 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
 		D37C32612DA98147005AADC6 /* FacebookAEM */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D37C32602DA98147005AADC6 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;

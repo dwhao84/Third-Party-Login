@@ -1,40 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
-		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
-			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
-			</array>
-		</dict>
-		<key>CFBundleURLTypes</key>
-		<array>
-			<dict>
-				<key>CFBundleURLSchemes</key>
-				<array>
-					<string>fbAPP-ID</string>
-				</array>
-			</dict>
-		</array>
-		<key>FacebookAppID</key>
-		<string>APP-ID</string>
-		<key>FacebookClientToken</key>
-		<string>CLIENT-TOKEN</string>
-		<key>FacebookDisplayName</key>
-		<string>APP-NAME</string>
-	</dict>
-</dict>
+    <dict>
+        <key>UIApplicationSceneManifest</key>
+        <dict>
+            <key>UIApplicationSupportsMultipleScenes</key>
+            <false/>
+            <key>UISceneConfigurations</key>
+            <dict>
+                <key>UIWindowSceneSessionRoleApplication</key>
+                <array>
+                    <dict>
+                        <key>UISceneConfigurationName</key>
+                        <string>Default Configuration</string>
+                        <key>UISceneDelegateClassName</key>
+                        <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                        <key>UISceneStoryboardFile</key>
+                        <string>Main</string>
+                    </dict>
+                </array>
+            </dict>
+        </dict>
+        <key>FacebookAppID</key>
+        <string>1333623574517833</string>
+        <key>FacebookClientToken</key>
+        <string>YOUR_CLIENT_TOKEN</string>
+        <key>FacebookDisplayName</key>
+        <string>Third Party Login</string>
+        <key>FacebookAutoLogAppEventsEnabled</key>
+        <string>TRUE</string>
+        <key>FacebookAdvertiserIDCollectionEnabled</key>
+        <string>TRUE</string>  
+        <key>GIDClientID</key>
+        <string>174556200697-mkut91rsm27reod7lu4nl7oh6es40it7.apps.googleusercontent.com</string>
+        <key>CFBundleURLTypes</key>
+        <array>
+            <dict>
+                <key>CFBundleURLSchemes</key>
+                <array>
+                    <string>com.googleusercontent.apps.174556200697-mkut91rsm27reod7lu4nl7oh6es40it7</string>
+                </array>
+            </dict>
+            <dict>
+                <key>CFBundleURLSchemes</key>
+                <array>
+                    <string>fb1333623574517833</string>
+                </array>
+            </dict>
+        </array>
+        <key>LSApplicationQueriesSchemes</key>
+        <array>
+            <string>fbapi</string>
+            <string>fb-messenger-share-api</string>
+            <string>fbauth2</string>
+            <string>fbshareextension</string>
+        </array>
+    </dict>
 </plist>
